@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=2, user-scalable=yes">
+    <meta name="author" content="laon">
+    <meta name="description" content="음향기기를 소개하는 라온의 웹사이트입니다.">
+    <meta name="keywords" content="헤드폰, 이어폰, 블루투스 스피커">
+    <title>LA-ON</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="tabcontent.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/tabcontent.js"></script>
+</head>
+
+<body>
+    <div id="header" class="clearfix">
+        <div class="header_wrap clearfix">
+            <h1 class="logo"><a href="main.html">logo</a></h1>
+            <button type="button" id="toggle_btn">전체메뉴</button>
+            <ul class="gnb">
+                <li><a href="a00_about.html">About Us</a></li>
+                <li><a href="b00_headphone.html">Headphone</a>
+                    <ul class="sub">
+                        <li><a href="preparing.html">ON-01</a></li>
+                        <li><a href="preparing.html">ON-02</a></li>
+                        <li><a href="preparing.html">ON-03</a></li>
+                    </ul>
+                </li>
+                <li><a href="c00_earphone.html">Earphone</a>
+                    <ul class="sub">
+                        <li><a href="preparing.html">ON-04</a></li>
+                        <li><a href="preparing.html">ON-05</a></li>
+                        <li><a href="preparing.html">ON-06</a></li>
+                    </ul>
+                </li>
+                <li><a href="d00_speaker.html">Speaker</a>
+                    <ul class="sub">
+                        <li><a href="preparing.html">ON-07</a></li>
+                        <li><a href="preparing.html">ON-08</a></li>
+                        <li><a href="preparing.html">ON-09</a></li>
+                    </ul>
+                </li>
+                <li><a href="e00_support.html">Support</a>
+                    <ul class="sub">
+                        <li><a href="preparing.html">Contact Us</a></li>
+                        <li><a href="preparing.html">FAQ</a></li>
+                        <li><a href="e03_event.html">Event</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                $('#toggle_btn').on('click', function() {
+                    $('.gnb').toggle(); //한꺼번에. 애니메이션이 들어가려 할땐 따로 써주기
+                });
+
+            </script>
+            <div class="jq_wrap">
+                <div id="search"><img src="images/sistrix.svg" alt="찾기 버튼" width="31" height="25" class="imgSelect" /><img src="images/sistrix.svg" alt="찾기 버튼" width="31" height="50rem" class="resize" /></div>
+
+                <!-- //버튼 이미지 -->
+
+                <!-- 폼 레이어  -->
+                <div id="divLangSelect">
+
+                    <div style="position:absolute;">
+                        <!-- 폼 상자의 스타일 -->
+                        <form action="javascript:alert( '검색!' );">
+                            <div>
+                                <input type="text" class="text" placeholder="검색">
+                                <input type="image" class="image" name="imageinput" src="images/sistrix.svg" width="31" height="25">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- //폼 레이어  -->
+
+                <script type="text/javascript">
+                    $('#search').click(function(e) {
+                        $('#divLangSelect').toggle();
+                    });
+
+                </script>
+            </div>
+            <!-- jq_wrap end -->
+        </div>
+    </div>
+    <!-- header end -->
+    <div class="a00_category">
+        <div class="about_us">
+            <p>About Us</p>
+        </div>
+    </div>
+    <!-- category end -->
+    <div class="about_box1">
+        <div class="logo_box clearfix">
+
+        </div>
+        <p class="p6">로고는 라온의 &#39;즐거움&#39;을 표현하였습니다.</p>
+        <p class="p7">LA-ON은 &#39;즐거움&#39; 이라는 의미를 가진<br/>순우리말을 뜻합니다.</p>
+        <p class="p8">Any where, Any time.<br/>언제 어디서나 라온과 함께<br/>사운드를 느껴보세요.</p>
+    </div>
+    <!-- about_box1 end -->
+    <div class="about_box2">
+        <div class="box_wrap">
+            <h1>브랜드 이념</h1>
+            <ul class="list_wrap1">
+                <li>음악의 분위기</li>
+                <li>line</li>
+                <li>Mood of Music</li>
+                <li>음악에게 분위기까지 느껴진다면.<br/> 라온은 여러분에게 마음을 움직이는<br/> 사운드를 전달합니다.</li>
+                <li>img</li>
+            </ul>
+
+            <ul class="list_wrap2">
+                <li>모던한 디자인</li>
+                <li>line</li>
+                <li>Modern Your Life</li>
+                <li>고객에게 꾸준히 사랑받기 위한 디자인.<br/>모던, 캐주얼 그 이상의<br/> 제품들을 라온이 만듭니다.</li>
+                <li>img</li>
+            </ul>
+            <ul class="list_wrap3">
+                <li>고품질 사운드 시스템</li>
+                <li>line</li>
+                <li>Feel the High Quality Sound</li>
+                <li>라온은 음질의 성장을 가치로 두고<br/> 여러분에게 감동을 드리는<br/> 고품질의 사운드를 제공합니다.</li>
+                <li>img</li>
+            </ul>
+        </div>
+        <!-- box_wrap end -->
+    </div>
+    <!-- about_box2 end -->
+    <div style="max-width: 100%;" class="about_box3">
+       <h2>라온의 제품</h2>
+        <ul class="tabs" data-persist="true">
+            <li><a href="#view1">헤드폰</a></li>
+            <li><a href="#view2">이어폰</a></li>
+            <li><a href="#view3">블루투스 스피커</a></li>
+        </ul>
+        <div class="tabcontents">
+            <div id="view1">
+                <ul class="clearfix">
+                    <li><a href="b00_headphone.html">살펴 보기</a></li>
+                </ul>
+            </div>
+            <div id="view2">
+                <ul>
+                    <li><a href="c00_earphone.html">살펴 보기</a></li>
+                </ul>
+            </div>
+            <div id="view3">
+                <ul>
+                    <li><a href="d00_speaker.html">살펴 보기</a></li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+
+    <!-- about_box3 end -->
+    <div id="footer">
+        <div class="footer_wrap">
+            <div class="footer_top">
+                <h2 class="logo"><a href="main.html">logo</a></h2>
+
+                <div class="sns">
+                    <div class="sns_wrap">
+                        <a href="#"><img src="images/facebook.png" alt="페이스북"></a>
+                        <a href="#"><img src="images/twitter.png" alt="트위터"></a>
+                        <a href="#"><img src="images/instagram.png" alt="인스타그램"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- footer_top end -->
+
+            <div class="sitemap clearfix">
+                <p class="ul1">
+                    <span class="li1">제품</span>
+                    <span><a href="b00_headphone.html">헤드폰</a></span>
+                    <span><a href="c00_earphone.html">이어폰</a></span>
+                    <span><a href="d00_speaker.html">블루투스 스피커</a></span>
+                </p>
+                <p class="ul2">
+                    <span class="li2">고객지원</span>
+                    <span><a href="preparing.html">Contact Us</a></span>
+                    <span><a href="preparing.html">FAQ</a></span>
+                    <span><a href="e03_event.html">Event</a></span>
+                </p>
+            </div>
+            <!-- sitemap end -->
+            <div class="info_wrap">
+                <p class="p1"><span class="span1">주소</span>
+                    <span>서울특별시 서대문구</span></p>
+                <p class="p2"><span class="span2">이메일</span>
+                    <span>hana1016059@gmail.com</span></p>
+                <p class="p3"><span class="span3">전화번호</span>
+                    <span>02-1212-1212</span></p>
+                <p class="p4"><span class="span4"><a href="preparing.html">개인정보취급방침</a></span>
+                    <span class="span5"><a href="preparing.html">이용약관</a></span></p>
+            </div>
+            <!-- info_wrap end -->
+        </div>
+        <!-- footer_wrap end -->
+    </div>
+    <!-- footer end -->
+
+</body>
+
+</html>

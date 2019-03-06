@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=2, user-scalable=yes">
+    <meta name="author" content="laon">
+    <meta name="description" content="음향기기를 소개하는 라온의 웹사이트입니다.">
+    <meta name="keywords" content="헤드폰, 이어폰, 블루투스 스피커">
+    <title>LA-ON</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="header" class="clearfix">
+        <div class="header_wrap clearfix">
+            <h1 class="logo"><a href="main.html">logo</a></h1>
+            <button type="button" id="toggle_btn">전체메뉴</button>
+            <ul class="gnb">
+                <li><a href="a00_about.html">About Us</a></li>
+                <li><a href="b00_headphone.html">Headphone</a>
+                    <ul class="sub">
+                        <li><a href="preparing.html">ON-01</a></li>
+                        <li><a href="preparing.html">ON-02</a></li>
+                        <li><a href="preparing.html">ON-03</a></li>
+                    </ul>
+                </li>
+                <li><a href="c00_earphone.html">Earphone</a>
+                    <ul class="sub">
+                        <li><a href="preparing.html">ON-04</a></li>
+                        <li><a href="preparing.html">ON-05</a></li>
+                        <li><a href="preparing.html">ON-06</a></li>
+                    </ul>
+                </li>
+                <li><a href="d00_speaker.html">Speaker</a>
+                    <ul class="sub">
+                        <li><a href="preparing.html">ON-07</a></li>
+                        <li><a href="preparing.html">ON-08</a></li>
+                        <li><a href="preparing.html">ON-09</a></li>
+                    </ul>
+                </li>
+                <li><a href="e00_support.html">Support</a>
+                    <ul class="sub">
+                        <li><a href="preparing.html">Contact Us</a></li>
+                        <li><a href="preparing.html">FAQ</a></li>
+                        <li><a href="e03_event.html">Event</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- gnb end -->
+            <script type="text/javascript">
+                $('#toggle_btn').on('click', function() {
+                    $('.gnb').toggle(); //한꺼번에. 애니메이션이 들어가려 할땐 따로 써주기
+                });
+
+            </script>
+            <div class="jq_wrap">
+                <div id="search"><img src="images/sistrix.svg" alt="찾기 버튼" width="31" height="25" class="imgSelect" /><img src="images/sistrix.svg" alt="찾기 버튼" width="31" height="50rem" class="resize" /></div>
+
+                <!-- //버튼 이미지 -->
+
+                <!-- 폼 레이어  -->
+                <div id="divLangSelect">
+
+                    <div style="position:absolute;">
+                        <!-- 폼 상자의 스타일 -->
+                        <form action="javascript:alert( '검색!' );">
+                            <div>
+                                <input type="text" class="text" placeholder="검색">
+                                <input type="image" class="image" name="imageinput" src="images/sistrix.svg" width="31" height="25">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- //폼 레이어  -->
+
+                <script type="text/javascript">
+                    $('#search').click(function(e) {
+                        $('#divLangSelect').toggle();
+                    });
+
+                </script>
+            </div>
+            <!-- jq_wrap end -->
+        </div>
+        <!-- header_wrap end -->
+    </div>
+    <!-- header end -->
+    <div class="e03_category clearfix">
+        <div class="event">
+            <p>Event</p>
+        </div>
+    </div>
+    <!-- category end -->
+    <div class="sub_box_evt1">
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#event1" class="menu__link">
+                               <span class="menu__title">
+                                <span class="menu__first-word" data-hover="해쉬태그">해쉬태그</span>
+                                <span class="menu__second-word" data-hover="이벤트">이벤트</span>
+                        </span></a></li>
+                <li class="menu__item">
+                    <a href="#event2" class="menu__link">
+                         <span class="menu__title">
+                             <span class="menu__first-word" data-hover="대학생">대학생</span>
+                             <span class="menu__second-word" data-hover="이벤트">이벤트</span>
+                             </span></a></li>
+                <li class="menu__item">
+                    <a href="#event3" class="menu__link">
+                         <span class="menu__title">
+                             <span class="menu__first-word" data-hover="계절">계절</span>
+                             <span class="menu__second-word" data-hover="이벤트">이벤트</span>
+                             </span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- sub_box_evt1 end -->
+    <div class="sub_box_evt2">
+        <div class="event_wrap">
+            <div class="event1">
+
+            </div>
+            <div class="event2">
+
+            </div>
+            <div class="event3">
+
+            </div>
+        </div>
+        <!-- event_wrap end -->
+    </div>
+    <!-- sub_box_evt2 end -->
+    <div id="footer">
+        <div class="footer_wrap">
+            <div class="footer_top">
+                <h2 class="logo"><a href="main.html">logo</a></h2>
+
+                <div class="sns">
+                    <div class="sns_wrap">
+                        <a href="#"><img src="images/facebook.png" alt="페이스북"></a>
+                        <a href="#"><img src="images/twitter.png" alt="트위터"></a>
+                        <a href="#"><img src="images/instagram.png" alt="인스타그램"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- footer_top end -->
+
+            <div class="sitemap clearfix">
+                <p class="ul1">
+                    <span class="li1">제품</span>
+                    <span><a href="b00_headphone.html">헤드폰</a></span>
+                    <span><a href="c00_earphone.html">이어폰</a></span>
+                    <span><a href="d00_speaker.html">블루투스 스피커</a></span>
+                </p>
+                <p class="ul2">
+                    <span class="li2">고객지원</span>
+                    <span><a href="preparing.html">Contact Us</a></span>
+                    <span><a href="preparing.html">FAQ</a></span>
+                    <span><a href="e03_event.html">Event</a></span>
+                </p>
+            </div>
+            <!-- sitemap end -->
+            <div class="info_wrap">
+                <p class="p1"><span class="span1">주소</span>
+                    <span>서울특별시 서대문구</span></p>
+                <p class="p2"><span class="span2">이메일</span>
+                    <span>hana1016059@gmail.com</span></p>
+                <p class="p3"><span class="span3">전화번호</span>
+                    <span>02-1212-1212</span></p>
+                <p class="p4"><span class="span4"><a href="preparing.html">개인정보취급방침</a></span>
+                    <span class="span5"><a href="preparing.html">이용약관</a></span></p>
+            </div>
+            <!-- info_wrap end -->
+        </div><!-- footer_wrap end -->
+    </div>    
+    <!-- footer end -->
+</body>
+
+</html>

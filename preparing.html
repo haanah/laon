@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>LA-ON</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="header" class="clearfix">
+        <h1 class="logo"><a href="main.html">logo</a></h1>
+        <button type="button" id="toggle_btn">전체메뉴</button>
+        <ul class="gnb">
+            <li><a href="a00_about.html">About Us</a></li>
+            <li><a href="b00_headphone.html">Headphone</a>
+                <ul class="sub">
+                    <li><a href="preparing.html">ON-01</a></li>
+                    <li><a href="preparing.html">ON-02</a></li>
+                    <li><a href="preparing.html">ON-03</a></li>
+                </ul>
+            </li>
+            <li><a href="c00_earphone.html">Earphone</a>
+                <ul class="sub">
+                    <li><a href="preparing.html">ON-04</a></li>
+                    <li><a href="preparing.html">ON-05</a></li>
+                    <li><a href="preparing.html">ON-06</a></li>
+                </ul>
+            </li>
+            <li><a href="d00_speaker.html">Speaker</a>
+                <ul class="sub">
+                    <li><a href="preparing.html">ON-07</a></li>
+                    <li><a href="preparing.html">ON-08</a></li>
+                    <li><a href="preparing.html">ON-09</a></li>
+                </ul>
+            </li>
+            <li><a href="e00_support.html">Support</a>
+                <ul class="sub">
+                    <li><a href="preparing.html">Contact Us</a></li>
+                    <li><a href="preparing.html">FAQ</a></li>
+                    <li><a href="e03_event.html">Event</a></li>
+                </ul>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            $('#toggle_btn').on('click', function() {
+                $('.gnb').toggle(); //한꺼번에. 애니메이션이 들어가려 할땐 따로 써주기
+            });
+
+        </script>
+        <div class="jq_wrap">
+            <div id="search"><img src="images/sistrix.svg" alt="찾기 버튼" width="31" height="25" class="imgSelect" /></div>
+
+            <!-- //버튼 이미지 -->
+
+            <!-- 폼 레이어  -->
+            <div id="divLangSelect">
+
+                <div style="position:absolute;top:29px;">
+                    <!-- 폼 상자의 스타일 -->
+                    <form action="javascript:alert( '검색!' );">
+                        <div>
+                            <input type="text" class="text" placeholder="검색">
+                            <input type="image" name="imageinput" src="images/sistrix.svg" width="31" height="25">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <!-- //폼 레이어  -->
+
+            <script type="text/javascript">
+                $('#search').click(function(e) {
+                    $('#divLangSelect').toggle();
+                });
+
+            </script>
+        </div>
+        <!-- jq_wrap end -->
+    </div>
+    <!-- header end -->
+    <div class="prepare">
+        <div class="prepare_img">
+            <p>페이지를 준비중 입니다.</p>
+            <p>빠른 시일내에 이용하실 수 있도록 노력하겠습니다.</p>
+            <p>이용에 불편을 드려 죄송합니다.</p>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_wrap">
+            <div class="footer_top">
+                <h2 class="logo"><a href="main.html">logo</a></h2>
+                <div class="sitemap">
+                    <ul class="ul1">
+                        <li>제품</li>
+                        <li class="li1"><a href="b00_headphone.html">헤드폰</a></li>
+                        <li><a href="c00_earphone.html">이어폰</a></li>
+                        <li><a href="d00_speaker.html">블루투스 스피커</a></li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>고객지원</li>
+                        <li class="li2"><a href="preparing.html">Contact Us</a></li>
+                        <li><a href="preparing.html">FAQ</a></li>
+                        <li><a href="e03_event.html">Event</a></li>
+                    </ul>
+                </div>
+                <!-- sitemap end -->
+                <div class="sns">
+                    <a href="#"><img src="images/facebook.png" alt="페이스북"></a>
+                    <a href="#"><img src="images/twitter.png" alt="트위터"></a>
+                    <a href="#"><img src="images/instagram.png" alt="인스타그램"></a>
+                </div>
+            </div>
+            <!-- footer_top end -->
+
+            <div class="line"></div>
+            <!-- line end -->
+            <div class="info_wrap">
+                <span class="span1">주소</span>
+                <span>서울특별시 서대문구</span>
+                <span class="span2">이메일</span>
+                <span>hana1016059@gmail.com</span>
+                <span class="span3">전화번호</span>
+                <span>02-1212-1212</span>
+                <span class="span4"><a href="preparing.html">개인정보취급방침</a></span>
+                <span class="span5"><a href="preparing.html">이용약관</a></span>
+            </div>
+            <!-- info_wrap end -->
+        </div>
+    </div>
+    <!-- footer_wrap end -->
+    <!-- footer end -->
+
+</body>
+
+</html>
